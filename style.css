@@ -22,3 +22,10 @@ a,
 .btn{
   transition: all 300ms ease;
 }
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links{
+  display: flex;
+}
