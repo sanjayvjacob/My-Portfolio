@@ -36,9 +36,9 @@ nav{
 
 }
 .nav-links{
-  gap: 1rem;
+  gap: 2rem;
   list-style: none;
-  font-size: 1 rem;
+  font-size: 1.5rem;
 }
 a{
   color: black;
@@ -104,7 +104,7 @@ a:hover{
 .menu-links li{
   list-style: none;
 }
-.menu-links open{
+.menu-links.open{
   max-height: 300px;
 }
 
