@@ -12,43 +12,45 @@ const btn2 = document.getElementById("modeToggle2");
 const themeIcons = document.querySelectorAll(".icon");
 const currentTheme = localStorage.getItem("theme");
 
-if(currentTheme === "dark") {
+if (currentTheme === "dark") {
   setDarkMode();
 }
 
-btn.addEventlistener("click", function() {
+btn.addEventListener("click", function () {
   setTheme();
 });
 
-btn2.addEventlistener("click", function() {
+btn2.addEventListener("click", function () {
   setTheme();
 });
 
 function setTheme() {
   let currentTheme = document.body.getAttribute("theme");
 
-  if(currentTheme === "dark") {
+  if (currentTheme === "dark") {
     setLightMode();
-  }else{
+  } else {
     setDarkMode();
   }
 }
 
-function setDarkMode(){
-document.body.setAttribute("theme", "dark");
-localStorage.setItem("theme", "dark");
+function setDarkMode() {
+  document.body.setAttribute("theme", "dark");
+  localStorage.setItem("theme", "dark");
 
-themeIcons.forEach((icon) => {
-  icon.src = icon.getAttribute("src-dark");
-});
+  themeIcons.forEach((icon) => {
+    icon.src = icon.getAttribute("src-dark");
+  });
 }
-function setLightMode(){
-document.body.removeAttribute("theme",);
-localStorage.setItem("theme", "light");
 
-themeIcons.forEach((icon) => {
-  icon.src = icon.getAttribute("src-light");
-});
+function setLightMode() {
+  document.body.removeAttribute("theme");
+  localStorage.setItem("theme", "light");
+
+  themeIcons.forEach((icon) => {
+    icon.src = icon.getAttribute("src-light");
+  });
 }
+
 
 
