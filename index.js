@@ -52,5 +52,5 @@ function setLightMode() {
   });
 }
 
-
-
+const date = new Date().getFullYear();
+document.getElementById("currentYear").textContent = date;
