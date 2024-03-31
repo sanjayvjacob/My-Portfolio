@@ -10,7 +10,7 @@ Welcome to my GitHub repository for my personal portfolio website. This portfoli
 
 ## Demo
 
-You can visit my live portfolio at https://sanjayvjacob.github.io/My-Portfolio/
+You can visit my live portfolio at https://sanjayvjacob.github.io/my-portfolio/
 
 ## Features
 
